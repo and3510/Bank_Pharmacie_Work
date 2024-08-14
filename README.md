@@ -9,10 +9,10 @@
 </div>
 
 <h2> Integrantes </h2>
-Anderson Araujo do Vale <br>
-Beatriz Barreto <br>
-Cristovam Paulo <br>
-Gustavo Araujo do Vale
+Anderson Araujo do Vale - and3510 <br>
+Beatriz Barreto - whosbea <br>
+Cristovam Paulo - cristovam10000<br>
+Gustavo Araujo do Vale - gustavodovale
 
 
 <h2>Requisitos de Entrega </h2>
