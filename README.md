@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">Banco de Dados de uma Farmácia</h1>
+<h1 align="center">Banco de Dados de uma Farmácia</h1>
 
 <div align="center" >
 
