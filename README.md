@@ -49,9 +49,13 @@ Nesta seção, precisamos criar entidades para o sistema da farmácia.
 
 Principais:
 
-Produtos (Medicamentos): Armazene detalhes como nome, código, descrição, preço, quantidade em estoque, data de validade. <br>
-Clientes: Guarde informações como nome, endereço, telefone, e histórico de compras. <br>
-Fornecedores: Inclua dados sobre nome, endereço, contatos e produtos fornecidos. <br>
-Vendas: Registre transações de vendas, incluindo data, produtos vendidos, quantidade, preço e cliente. <br>
-Funcionários: Mantenha registros de funcionários para controle de operações. <br>
-Prescrições Médicas: Registre prescrições médicas associadas às vendas. <br>
+- **Produtos (Medicamentos)**: Armazene detalhes como nome, código, descrição, preço, quantidade em estoque, data de validade.
+- **Clientes**: Guarde informações como nome, endereço, telefone, e histórico de compras.
+- **Fornecedores**: Inclua dados sobre nome, endereço, contatos e produtos fornecidos.
+- **Vendas**: Registre transações de vendas, incluindo data, produtos vendidos, quantidade, preço e cliente.
+- **Funcionários**: Mantenha registros de funcionários para controle de operações.
+- **Prescrições Médicas**: Registre prescrições médicas associadas às vendas.
+- **Planos de saúde**: 
+- **Produtos (Outros)**:
+- **Serviços**:
+- **Lojas**:
