@@ -17,25 +17,37 @@ Gustavo do Vale - gustavodovale
 
 <h2>Requisitos de Entrega </h2>
 
-• Capa  <br>
-• Contracapa <br>
-• Sumário <br>
-• Introdução <br>
-• Ferramentas <br>
-• Modelo conceitual <br>
-    - Definição do Mini mundo <br>
-    - Definição do Dicionário de Dados-DD <br>
-    - Criação do Artefato – Modelo de Entidade Relacionamento-MER <br>
-• Modelo Lógico <br>
-    - Definir normatização do banco <br>
-    - Criação do Artefato – Diagrama de Entidade Relacional-DER <br>
-    - Criação das tabelas <br>
-• Modelo Físico <br>
-    - Povoamento (Inserção de registros) <br>
-    - Notação de Álgebra Relacional de Banco de dados <br>
-    - Consulta SQL <br>
-• Considerações finais <br>
-• Referências bibliográficas
+<ul>
+    <li>Capa</li>
+    <li>Contracapa</li>
+    <li>Sumário</li>
+    <li>Introdução</li>
+    <li>Ferramentas</li>
+    <li>Modelo conceitual
+        <ul>
+            <li>Definição do Mini mundo</li>
+            <li>Definição do Dicionário de Dados-DD</li>
+            <li>Criação do Artefato – Modelo de Entidade Relacionamento-MER</li>
+        </ul>
+    </li>
+    <li>Modelo Lógico
+        <ul>
+            <li>Definir normatização do banco</li>
+            <li>Criação do Artefato – Diagrama de Entidade Relacional-DER</li>
+            <li>Criação das tabelas</li>
+        </ul>
+    </li>
+    <li>Modelo Físico
+        <ul>
+            <li>Povoamento (Inserção de registros)</li>
+            <li>Notação de Álgebra Relacional de Banco de dados</li>
+            <li>Consulta SQL</li>
+        </ul>
+    </li>
+    <li>Considerações finais</li>
+    <li>Referências bibliográficas</li>
+</ul>
+
 
 <h2> Introdução </h2>
 Trabalho da Faculdade de Banco de Dados de uma Farmácia
