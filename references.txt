@@ -2,4 +2,6 @@ http://www.ouka.com.br/carol/e-book/database/tipos-de-bancos-de-dados.pdf
 
 https://github.com/topics/sql
 
+https://www.marilia.unesp.br/Home/Instituicao/Docentes/EdbertoFerneda/bd-aulas03_04.pdf
 
+https://sites.ffclrp.usp.br/cid/docentes/edberto/Apostilas/Apostila%20SQL.pdf
