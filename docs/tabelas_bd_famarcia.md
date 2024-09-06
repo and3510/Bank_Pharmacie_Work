@@ -49,3 +49,33 @@
 | id_Farmacêutico     | Identificador do farmacêutico responsável pela venda                                      | Int          | FK, NOT NULL, UNIQUE            |
 
 
+## Clientes
+
+
+| Atributo            | Descrição                                       | Tipo de dado | Restrição do atributo            |
+| ------------------- | ----------------------------------------------- | ------------ | -------------------------------- |
+| id_cliente        | Identificador único do cliente (chave primária) | INT          | PRIMARY KEY, INCREMENT, NOT NULL |
+| nome              | Nome completo do cliente                        | VARCHAR(100) | NOT NULL                         |
+| cpf               | Cadastro de Pessoa Física (CPF)                 | VARCHAR(11)  | NOT NULL                         |
+| telefone          | Telefone de contato                             | VARCHAR(15)  | NOT NULL                         |
+| email             | E-mail do cliente                               | VARCHAR(100) | NOT NULL                         |
+| data_nascimento   | Data de nascimento                              | DATE         | NOT NULL                         |
+| historico_compras | Histórico de compras realizadas                 | TEXT         |                                  |
+
+
+
+## Funcionarios
+
+| Atributo         | Descrição                                           | Domínio       | Restrição do atributo            |
+| ---------------- | --------------------------------------------------- | ------------- | -------------------------------- |
+| id_funcionario | Identificador único do funcionário (chave primária) | INT           | PRIMARY KEY, INCREMENT, NOT NULL |
+| nome           | Nome completo do funcionário                        | VARCHAR(100)  | NOT NULL                         |
+| cpf            | Cadastro de Pessoa Física (CPF)                     | VARCHAR(11)   | NOT NULL                         |
+| endereco       | Endereço residencial do funcionário                 | VARCHAR(255)  | NOT NULL                         |
+| telefone       | Telefone de contato                                 | VARCHAR(15)   | NOT NULL                         |
+| email          | E-mail do funcionário                               | VARCHAR(100)  | NOT NULL                         |
+| cargo          | Cargo que o funcionário ocupa                       | VARCHAR(50)   | NOT NULL                         |
+| data_admissao  | Data de admissão na farmácia                        | DATE          | NOT NULL                         |
+| salario        | Salário do funcionário                              | DECIMAL(10,2) | NOT NULL                         |
+| turno          | Turno de trabalho (ex: manhã, tarde, noite)         | VARCHAR(10)   | NOY NULL                         |
+
