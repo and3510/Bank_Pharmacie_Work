@@ -83,41 +83,43 @@
 
 ## Prescrição Medica
 
-| Atributo       | Descrição                                            | Domínio      | Restrição do Atributo |
-| -------------- | ---------------------------------------------------- | ------------ | --------------------- |
-| cod_receita    | identificador do tipo de receita                     | int          | not null, fk          |
-| crm            | identificador unico do medico solicitante da receita | char(7)      | not null, pk          |
-| paciente       | nome do paciente que consta na receita               | varchar(100) | not null              |
-| prescricao     | remedios solicitados na receita                      | varchar(500) | not null              |
-| id_funcionario | Identificador único do funcionário                   | int          | not null, FK          |
+| Atributo       | Descrição                                                                                   | Domínio      | Restrição do Atributo |
+| -------------- | ------------------------------------------------------------------------------------------- | ------------ | --------------------- |
+| cod_receita    | Código único que identifica o tipo de receita vinculada à prescrição médica.                | int          | not null, fk          |
+| crm            | Código de Registro Médico (CRM) que identifica unicamente o médico que solicitou a receita. | char(7)      | not null, pk          |
+| paciente       | Nome completo do paciente ao qual a prescrição médica se destina.                           | varchar(100) | not null              |
+| prescricao     | Lista de medicamentos e suas respectivas doses prescritas pelo médico.                      | varchar(500) | not null              |
+| id_funcionario | Identificador único do funcionário responsável por registrar a prescrição no sistema.       | int          | not null, FK          |
 
 
-### Tipo Receita
 
-| Atributo    | Descrição                                                         | Domínio      | Restrição do Atributo |
-| ----------- | ----------------------------------------------------------------- | ------------ | --------------------- |
-| receita     | tipo da receita                                                   | varchar(50)  | Not null              |
-| cod_receita | codigo unico identificador                                        | int          | not null, pk          |
-| descricao   | descrição com recomendações para a venda com esse tipo de receita | varchar(500) | not null              |
+### Tipo de Receita
+
+| Atributo    | Descrição                                                                      | Domínio      | Restrição do Atributo |
+| ----------- | ------------------------------------------------------------------------------ | ------------ | --------------------- |
+| receita     | Tipo de receita emitida, como "controlada" ou "simples".                       | varchar(50)  | Not null              |
+| cod_receita | Código único que identifica o tipo de receita, utilizado como chave primária.  | int          | not null, pk          |
+| descricao   | Recomendações e observações específicas associadas ao tipo de receita emitida. | varchar(500) | not null              |
 
 
 
 ## Serviços
 
-| Atributo        | Descrição                                 | Domínio | Restrição do Atributo |
-| --------------- | ----------------------------------------- | ------- | --------------------- |
-| cod_servico     | codigo indentificador do serviço prestado | int     | fk, not null          |
-| id_funcionario  | funcionario que prestou o serviço         | int     | fk, not null          |
-| data_realizacao | data em que o serviço foi prestado        | date    | not null              |
-| id_cliente      | Identificador único do cliente            | int     | fk, not null          |
+| Atributo        | Descrição                                                                | Domínio | Restrição do Atributo |
+| --------------- | ------------------------------------------------------------------------ | ------- | --------------------- |
+| cod_servico     | Código único que identifica o serviço prestado.                          | int     | fk, not null          |
+| id_funcionario  | Identificador único do funcionário responsável pela prestação do serviço | int     | fk, not null          |
+| data_realizacao | Data exata em que o serviço foi realizado.                               | date    | not null              |
+| id_cliente      | Identificador único do cliente para quem o serviço foi prestado.         | int     | fk, not null          |
 
 
 
-### tipo servico
 
-| Atributo    | Descrição                             | Domínio      | Restrição do Atributo |
-| ----------- | ------------------------------------- | ------------ | --------------------- |
-| servico     | nome do serviço                       | varchar(50)  | not null              |
-| cod_servico | codigo identificador unico do serviço | int          | not null, pk          |
-| preco       | preço do serviço                      | float        | not null              |
-| descricao   | descrição do serviço prestado         | varchar(500) | not null              |
+### Tipo de Serviço
+
+| Atributo    | Descrição                                                                                    | Domínio      | Restrição do Atributo |
+| ----------- | -------------------------------------------------------------------------------------------- | ------------ | --------------------- |
+| servico     | Nome do serviço oferecido, como "consulta médica" ou "exame laboratorial".                   | varchar(50)  | not null              |
+| cod_servico | Código único de identificação do serviço, utilizado como chave primária.                     | int          | not null, pk          |
+| preco       | Valor monetário cobrado pela execução do serviço.                                            | float        | not null              |
+| descricao   | Detalhamento do serviço oferecido, incluindo o que está incluso e as condições de prestação. | varchar(500) | not null              |
