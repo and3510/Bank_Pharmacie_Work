@@ -79,3 +79,45 @@
 | salario        | Salário do funcionário                              | DECIMAL(10,2) | NOT NULL                         |
 | turno          | Turno de trabalho (ex: manhã, tarde, noite)         | VARCHAR(10)   | NOY NULL                         |
 
+
+
+## Prescrição Medica
+
+| Atributo       | Descrição                                            | Domínio      | Restrição do Atributo |
+| -------------- | ---------------------------------------------------- | ------------ | --------------------- |
+| cod_receita    | identificador do tipo de receita                     | int          | not null, fk          |
+| crm            | identificador unico do medico solicitante da receita | char(7)      | not null, pk          |
+| paciente       | nome do paciente que consta na receita               | varchar(100) | not null              |
+| prescricao     | remedios solicitados na receita                      | varchar(500) | not null              |
+| id_funcionario | Identificador único do funcionário                   | int          | not null, FK          |
+
+
+### Tipo Receita
+
+| Atributo    | Descrição                                                         | Domínio      | Restrição do Atributo |
+| ----------- | ----------------------------------------------------------------- | ------------ | --------------------- |
+| receita     | tipo da receita                                                   | varchar(50)  | Not null              |
+| cod_receita | codigo unico identificador                                        | int          | not null, pk          |
+| descricao   | descrição com recomendações para a venda com esse tipo de receita | varchar(500) | not null              |
+
+
+
+## Serviços
+
+| Atributo        | Descrição                                 | Domínio | Restrição do Atributo |
+| --------------- | ----------------------------------------- | ------- | --------------------- |
+| cod_servico     | codigo indentificador do serviço prestado | int     | fk, not null          |
+| id_funcionario  | funcionario que prestou o serviço         | int     | fk, not null          |
+| data_realizacao | data em que o serviço foi prestado        | date    | not null              |
+| id_cliente      | Identificador único do cliente            | int     | fk, not null          |
+
+
+
+### tipo servico
+
+| Atributo    | Descrição                             | Domínio      | Restrição do Atributo |
+| ----------- | ------------------------------------- | ------------ | --------------------- |
+| servico     | nome do serviço                       | varchar(50)  | not null              |
+| cod_servico | codigo identificador unico do serviço | int          | not null, pk          |
+| preco       | preço do serviço                      | float        | not null              |
+| descricao   | descrição do serviço prestado         | varchar(500) | not null              |
