@@ -123,3 +123,51 @@
 | cod_servico | Código único de identificação do serviço, utilizado como chave primária.                     | int          | not null, pk          |
 | preco       | Valor monetário cobrado pela execução do serviço.                                            | float        | not null              |
 | descricao   | Detalhamento do serviço oferecido, incluindo o que está incluso e as condições de prestação. | varchar(500) | not null              |
+
+
+
+# plano de saúde
+
+| Atributo     |                        Descrição                        | Domínio      | Restrição do atributo               |
+| ------------ | :-----------------------------------------------------: | ------------ | ----------------------------------- |
+| Id_plano     |              Identificador único do plano               | MediumInt    | PK, AUTOINCREMENT, NOT NULL, UNIQUE |
+| Nome         |                      Nome do plano                      | Varchar(100) | NOT NULL                            |
+| Descrição    | Descrição do plano (benefícios, o que ele cobre , etc.) | Varchar(500) | NOT NULL                            |
+| Preço        |                     Preço  do plano                     | Double       | NOT NULL                            |
+| Data_Criação |                data de criação do plano                 | DATE         | NOTE NULL                           |
+| Status       |                ativo,suspenso,cancelado                 | Varchar(20)  | NOT NULL                            |
+# hospitais
+
+| Atributo      | Descrição                 | Dominio      | Restrição de atributo                |
+| ------------- | ------------------------- | ------------ | ------------------------------------ |
+| ID_Hospital   | identificador do hospital | Mediumlnt    | PK, Autoincremenrt, NOT NULL, Unique |
+| Nome_Hospital | nome do hospital          | Varchar(100) | NOT NULL                             |
+| Endereço      | endereço do hospital      | Varchar(200) | NOT NULL                             |
+# Planos Hospitais
+
+| Atributo    | Descrição                    | Dominio   | Restrição de atributo                |
+| ----------- | ---------------------------- | --------- | ------------------------------------ |
+| Id_plano    | Identificador único do plano | MediumInt | FK, AUTOINCREMENT, NOT NULL, UNIQUE  |
+| ID_Hospital | identificador do hospital    | Mediumlnt | FK, Autoincremenrt, NOT NULL, Unique |
+
+## Produtos
+
+| Atributo       | Descrição                            | Domínio      | Restrição do atributo               |
+| -------------- | ------------------------------------ | ------------ | ----------------------------------- |
+| id_medicamento | Identificador único do medicamento   | Int          | PK, AUTOINCREMENT, NOT NULL, UNIQUE |
+| Nome           | Nome do medicamento                  | Varchar(100) | NOT NULL                            |
+| cod_de_barras  | Código de barras do medicamento      | Varchar(14)  | NOT NULL, UNIQUE                    |
+| Status         | Status do estoque(possui/não possui) | Boolean      | NOT NULL                            |
+
+## Filiais
+
+| Atributo      | Descrição                                                          | Domínio      | Restrição do atributo               |
+| ------------- | ------------------------------------------------------------------ | ------------ | ----------------------------------- |
+| id_filial     | Identificador único da filial                                      | Int          | PK, AUTOINCREMENT, NOT NULL, UNIQUE |
+| Nome          | Nome da filial                                                     | Varchar(100) | NOT NULL                            |
+| Endereço      | Endereço completo do fornecedor (rua, número, cidade, estado, CEP) | varchar(255) | NOT NULL                            |
+| data_abertura | horario e dias de funcionamento                                    | date         | NOT NULLA                           |
+| Status        | Status da filial(ativo/não ativo)                                  | Boolean      | NOT NULL                            |
+
+
+
