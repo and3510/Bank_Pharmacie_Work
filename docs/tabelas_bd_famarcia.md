@@ -14,6 +14,9 @@
 | Fabricante         |                     Fabricante do medicamento                     | Varchar(100) | NOT NULL                |
 | Categoria          |         Categoria ou tipo (ex.: analgésico, antibiótico)          | Varchar(100) | NOT NULL                |
 | Receita_Necessária |      Indica se o medicamento requer receita médica (Sim/Não)      | Boolean      | NOT NULL                |
+| id_fornecedor |      Identificador do fornecedor      | MediumInt      | NOT NULL                |
+
+
 
 ## Fornecedores
 
@@ -47,6 +50,8 @@
 | Desconto            | Valor ou porcentagem de desconto aplicado                                                 | Double       |                         |
 | Receita_Apresentada | Indica se a receita médica foi apresentada (Sim/Não) e Aplicável apenas para medicamentos | Boolean      |                         |
 | id_Farmacêutico     | Identificador do farmacêutico responsável pela venda                                      | Int          | FK, NOT NULL, UNIQUE            |
+| crm     | Identificador do medico                                      | Int          | FK            |
+| id_filial     | FIlial realizada a venda                                      | Int          | FK            |
 
 
 ## Clientes
@@ -90,6 +95,7 @@
 | paciente       | Nome completo do paciente ao qual a prescrição médica se destina.                           | varchar(100) | not null              |
 | prescricao     | Lista de medicamentos e suas respectivas doses prescritas pelo médico.                      | varchar(500) | not null              |
 | id_funcionario | Identificador único do funcionário responsável por registrar a prescrição no sistema.       | int          | not null, FK          |
+| descrição    | Descriçao da situaçao do paciente                | varchar(500)          | not null          |
 
 
 
@@ -114,8 +120,7 @@
 
 
 
-
-### Tipo de Serviço
+## Tipo de Serviço
 
 | Atributo    | Descrição                                                                                    | Domínio      | Restrição do Atributo |
 | ----------- | -------------------------------------------------------------------------------------------- | ------------ | --------------------- |
@@ -125,39 +130,14 @@
 | descricao   | Detalhamento do serviço oferecido, incluindo o que está incluso e as condições de prestação. | varchar(500) | not null              |
 
 
-
-# plano de saúde
-
-| Atributo     |                        Descrição                        | Domínio      | Restrição do atributo               |
-| ------------ | :-----------------------------------------------------: | ------------ | ----------------------------------- |
-| Id_plano     |              Identificador único do plano               | MediumInt    | PK, AUTOINCREMENT, NOT NULL, UNIQUE |
-| Nome         |                      Nome do plano                      | Varchar(100) | NOT NULL                            |
-| Descrição    | Descrição do plano (benefícios, o que ele cobre , etc.) | Varchar(500) | NOT NULL                            |
-| Preço        |                     Preço  do plano                     | Double       | NOT NULL                            |
-| Data_Criação |                data de criação do plano                 | DATE         | NOTE NULL                           |
-| Status       |                ativo,suspenso,cancelado                 | Varchar(20)  | NOT NULL                            |
-# hospitais
+## hospitais
 
 | Atributo      | Descrição                 | Dominio      | Restrição de atributo                |
 | ------------- | ------------------------- | ------------ | ------------------------------------ |
 | ID_Hospital   | identificador do hospital | Mediumlnt    | PK, Autoincremenrt, NOT NULL, Unique |
 | Nome_Hospital | nome do hospital          | Varchar(100) | NOT NULL                             |
 | Endereço      | endereço do hospital      | Varchar(200) | NOT NULL                             |
-# Planos Hospitais
 
-| Atributo    | Descrição                    | Dominio   | Restrição de atributo                |
-| ----------- | ---------------------------- | --------- | ------------------------------------ |
-| Id_plano    | Identificador único do plano | MediumInt | FK, AUTOINCREMENT, NOT NULL, UNIQUE  |
-| ID_Hospital | identificador do hospital    | Mediumlnt | FK, Autoincremenrt, NOT NULL, Unique |
-
-## Produtos
-
-| Atributo       | Descrição                            | Domínio      | Restrição do atributo               |
-| -------------- | ------------------------------------ | ------------ | ----------------------------------- |
-| id_medicamento | Identificador único do medicamento   | Int          | PK, AUTOINCREMENT, NOT NULL, UNIQUE |
-| Nome           | Nome do medicamento                  | Varchar(100) | NOT NULL                            |
-| cod_de_barras  | Código de barras do medicamento      | Varchar(14)  | NOT NULL, UNIQUE                    |
-| Status         | Status do estoque(possui/não possui) | Boolean      | NOT NULL                            |
 
 ## Filiais
 
