@@ -5,3 +5,11 @@ https://github.com/topics/sql
 https://www.marilia.unesp.br/Home/Instituicao/Docentes/EdbertoFerneda/bd-aulas03_04.pdf
 
 https://sites.ffclrp.usp.br/cid/docentes/edberto/Apostilas/Apostila%20SQL.pdf
+
+
+https://www.youtube.com/watch?v=GdxodSoV_5k&t=19s
+
+https://www.youtube.com/watch?v=IvrSP_VHP-c&t=259s
+
+https://www.devmedia.com.br/mer-e-der-modelagem-de-bancos-de-dados/14332
+
