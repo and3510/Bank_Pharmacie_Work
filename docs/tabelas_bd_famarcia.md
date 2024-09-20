@@ -44,7 +44,6 @@
 | Data_Venda          | Data e hora da venda                                                                      | DATETIME     | NOT NULL                |
 | id_Cliente          | Identificador do cliente                                                                  | Int          | FK, UNIQUE                    |
 | id_Produto          | Identificador do produto vendido (medicamentos, cosméticos, alimentos, etc.)              | MediumInt    | FK, NOT NULL, UNIQUE            |
-| Tipo_Produto        | Tipo de produto vendido (ex.: medicamento, cosmético, alimento)                           | Varchar(100) | NOT NULL                |
 | Quantidade          | Quantidade de unidades vendidas                                                           | Int          | NOT NULL                |
 | Valor_Total         | Valor total da venda                                                                      | Double       | NOT NULL                |
 | Desconto            | Valor ou porcentagem de desconto aplicado                                                 | Double       |                         |

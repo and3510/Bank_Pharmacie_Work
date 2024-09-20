@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="h4c_oPhvg5Xy0MeqgZNS" name="Page-1">
-        <mxGraphModel dx="2582" dy="177" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+        <mxGraphModel dx="2920" dy="540" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -158,7 +158,7 @@
                         <mxPoint x="62" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="QC1EbUprVl7dpRZCjpVZ-169" value="(1,1)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                <mxCell id="QC1EbUprVl7dpRZCjpVZ-169" value="(n,1)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="-1405" y="260" width="50" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="37" value="" style="edgeStyle=none;exitX=0.861;exitY=1.025;exitDx=0;exitDy=0;endArrow=oval;endFill=0;exitPerimeter=0;" parent="1" edge="1">
@@ -212,20 +212,6 @@
                 <mxCell id="53" value="ID_Produto" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="52" vertex="1" connectable="0">
                     <mxGeometry x="-0.335" y="-3" relative="1" as="geometry">
                         <mxPoint x="73" y="-3" as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="54" value="" style="edgeStyle=none;exitX=0.998;exitY=0.631;exitDx=0;exitDy=0;endArrow=oval;endFill=0;exitPerimeter=0;" parent="1" source="2" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-490" y="650" as="targetPoint"/>
-                        <mxPoint x="-559.9999999999997" y="644.6400000000001" as="sourcePoint"/>
-                        <Array as="points">
-                            <mxPoint x="-540" y="650"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="55" value="Tipo_Produto" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="54" vertex="1" connectable="0">
-                    <mxGeometry x="-0.2938" relative="1" as="geometry">
-                        <mxPoint x="96" y="9" as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="77" value="" style="edgeStyle=none;exitX=1;exitY=0.66;exitDx=0;exitDy=0;endArrow=oval;endFill=0;exitPerimeter=0;" parent="1" source="87" edge="1">
@@ -883,7 +869,7 @@
                 <mxCell id="0jXfrChw-r6oneS9u3Ee-135" value="data_abertura" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="-1155" y="762" width="100" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="QC1EbUprVl7dpRZCjpVZ-162" value="(n,n)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                <mxCell id="QC1EbUprVl7dpRZCjpVZ-162" value="(1,n)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="-1115" y="430" width="50" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="3Tj_bvLMt_tm9WLvLGLQ-183" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.002;exitY=0.567;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.001;entryY=0.494;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=oval;endFill=0;" parent="1" source="3Tj_bvLMt_tm9WLvLGLQ-191" target="3Tj_bvLMt_tm9WLvLGLQ-187" edge="1">
