@@ -61,13 +61,46 @@ Nesta seção, precisamos criar entidades para o sistema da farmácia.
 
 Principais:
 
-- **Produtos (Medicamentos)**: Armazene detalhes como nome, código, descrição, preço, quantidade em estoque, data de validade.
-- **Clientes**: Guarde informações como nome, endereço, telefone, e histórico de compras.
-- **Fornecedores**: Inclua dados sobre nome, endereço, contatos e produtos fornecidos.
-- **Vendas**: Registre transações de vendas, incluindo data, produtos vendidos, quantidade, preço e cliente.
-- **Funcionários**: Mantenha registros de funcionários para controle de operações.
-- **Prescrições Médicas**: Registre prescrições médicas associadas às vendas.
-- **Planos de saúde**: 
-- **Produtos (Outros)**:
-- **Serviços**:
-- **Lojas**:
+**Medicamentos**:
+
+Armazena informações detalhadas sobre os medicamentos, essenciais para controle de estoque, vendas, validade e requisitos de receita médica.
+
+**Fornecedores**:
+
+Garante o registro de fornecedores responsáveis pelo abastecimento de medicamentos e outros produtos, facilitando a gestão de contratos e informações de contato.
+
+**Vendas**:
+
+Controla as transações de vendas realizadas, permitindo rastreamento de produtos vendidos, clientes, farmacêuticos responsáveis, descontos aplicados e se houve a apresentação de receita médica.
+
+**Clientes**:
+
+Mantém um cadastro de clientes, necessário para o controle de compras, contatos e histórico de vendas, além de facilitar o relacionamento com o cliente.
+
+**Funcionários**:
+
+Registra os dados dos funcionários, importante para a administração de pessoal, controle de funções, turnos de trabalho e pagamentos.
+
+**Prescrição Médica**:
+
+Armazena as prescrições médicas, essenciais para a venda de medicamentos controlados e acompanhamento de tratamentos médicos.
+
+**Tipo de Receita**:
+
+Define os tipos de receitas médicas, importante para classificar medicamentos controlados ou simples e aplicar corretamente as restrições de venda.
+
+**Serviços**:
+
+Controla os serviços prestados pela farmácia, como consultas ou exames, assegurando o rastreamento das atividades realizadas por funcionários.
+
+**Tipo de Serviço**:
+
+Classifica os diferentes serviços prestados, garantindo a definição clara de preços e detalhes dos serviços ofertados.
+
+**Hospitais**:
+
+Registra hospitais associados, facilitando parcerias, vendas de medicamentos para hospitais e acompanhamento de convênios.
+
+**Filiais**:
+
+Controla as filiais da farmácia, incluindo informações de localização, status de operação e datas de abertura, facilitando a gestão descentralizada.
