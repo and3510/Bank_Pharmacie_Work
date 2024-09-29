@@ -10,10 +10,10 @@
 </div>
 
 <h2> Integrantes </h2>
-Anderson do Vale - and3510 <br>
-Beatriz Barreto - whosbea <br>
-Cristovam Paulo - cristovam10000<br>
-Gustavo do Vale - gustavodovale
+Anderson do Vale - [and3510](https://github.com/and3510) <br>
+Beatriz Barreto - [whosbea](https://github.com/whosbea) <br>
+Cristovam Paulo - [cristovam10000](https://github.com/cristovam10000) <br>
+Gustavo do Vale - [gustavodovale](https://github.com/gustavodovale)
 
 
 <h2>Requisitos de Entrega </h2>
@@ -51,16 +51,12 @@ Gustavo do Vale - gustavodovale
 
 
 <h2> Introdução </h2>
-Trabalho da Faculdade de Banco de Dados de uma Farmácia
-
-
+Trabalho da Faculdade de Banco de Dados para uma Farmácia
 
 
 <h2> Entidades </h2>
 
 Nesta seção, precisamos criar entidades para o sistema da farmácia.
-
-Principais:
 
 **Medicamentos**:
 
