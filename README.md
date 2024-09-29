@@ -10,10 +10,11 @@
 </div>
 
 <h2> Integrantes </h2>
-Anderson do Vale - [and3510](https://github.com/and3510) <br>
-Beatriz Barreto - [whosbea](https://github.com/whosbea) <br>
-Cristovam Paulo - [cristovam10000](https://github.com/cristovam10000) <br>
-Gustavo do Vale - [gustavodovale](https://github.com/gustavodovale)
+
+- Anderson do Vale - [and3510](https://github.com/and3510) 
+- Beatriz Barreto - [whosbea](https://github.com/whosbea) 
+- Cristovam Paulo - [cristovam10000](https://github.com/cristovam10000) 
+- Gustavo do Vale - [gustavodovale](https://github.com/gustavodovale)
 
 
 <h2>Requisitos de Entrega </h2>
