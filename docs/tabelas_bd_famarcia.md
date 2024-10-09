@@ -44,7 +44,7 @@
 
 | Atributo      | Descrição                                                          | Domínio      | Restrição do atributo   |
 | ------------- | ------------------------------------------------------------------ | ------------ | ----------------------- |
-| id_Fornecedor | Identificador único do fornecedor                                  | Int          | PK, AUTOINCREMENT, NOT NULL |
+| Id_Fornecedor | Identificador único do fornecedor                                  | Int          | PK, AUTOINCREMENT, NOT NULL |
 | Nome          | Nome do fornecedor                                                 | Varchar(100) | NOT NULL                |
 | CNPJ          | Cadastro Nacional da Pessoa Jurídica                               | Varchar(14)  | NOT NULL, UNIQUE          |
 | Telefone      | Número de telefone do fornecedor                                   | Varchar(15)  | NOT NULL                |
@@ -61,18 +61,18 @@
 
 | Atributo            | Descrição                                                                                 | Domínio      | Restrição do atributo   |
 | ------------------- | ----------------------------------------------------------------------------------------- | ------------ | ----------------------- |
-| id_Venda            | Identificador único da venda                                                              | MediumInt    | PK, AUTOINCREMENT, NOT NULL |
+| Id_Venda            | Identificador único da venda                                                              | MediumInt    | PK, AUTOINCREMENT, NOT NULL |
 | Data_Venda          | Data e hora da venda                                                                      | DATETIME     | NOT NULL                |
-| id_Cliente          | Identificador do cliente                                                                  | Int          | FK, UNIQUE                    |
-| id_Medicamento          | Identificador do medicamento vendido           | MediumInt    | FK           |
-| id_servico          | Identificador do servico vendido             | MediumInt    | FK           |
+| Id_Cliente          | Identificador do cliente                                                                  | Int          | FK, UNIQUE                    |
+| Id_Medicamento          | Identificador do medicamento vendido           | MediumInt    | FK           |
+| Id_servico          | Identificador do servico vendido             | MediumInt    | FK           |
 | Quantidade          | Quantidade de unidades vendidas                                                           | Int          | NOT NULL                |
 | Valor_Total         | Valor total da venda                                                                      | Double       | NOT NULL                |
 | Desconto            | Valor ou porcentagem de desconto aplicado                                                 | Double       |  DEFAULT 0               |
 | Receita_Apresentada | Indica se a receita médica foi apresentada (Sim/Não) e Aplicável apenas para medicamentos | Boolean      |                         |
-| id_Farmacêutico     | Identificador do farmacêutico responsável pela venda                                      | Int          | FK, NOT NULL            |
+| Id_Farmacêutico     | Identificador do farmacêutico responsável pela venda                                      | Int          | FK, NOT NULL            |
 | crm     | Identificador do medico                                      | Int          | FK            |
-| id_filial     | FIlial realizada a venda                                      | Int          | FK            |
+| Id_filial     | FIlial realizada a venda                                      | Int          | FK            |
 
 
 ## Cliente
@@ -80,12 +80,12 @@
 
 | Atributo            | Descrição                                       | Tipo de dado | Restrição do atributo            |
 | ------------------- | ----------------------------------------------- | ------------ | -------------------------------- |
-| id_cliente        | Identificador único do cliente (chave primária) | INT          | PRIMARY KEY, INCREMENT, NOT NULL |
-| nome              | Nome completo do cliente                        | VARCHAR(100) | NOT NULL                         |
-| cpf               | Cadastro de Pessoa Física (CPF)                 | VARCHAR(11)  | NOT NULL                         |
-| telefone          | Telefone de contato                             | VARCHAR(15)  | NOT NULL                         |
-| email             | E-mail do cliente                               | VARCHAR(100) | NOT NULL                         |
-| data_nascimento   | Data de nascimento                              | DATE         | NOT NULL                         |
+| Id_cliente        | Identificador único do cliente (chave primária) | INT          | PRIMARY KEY, INCREMENT, NOT NULL |
+| Nome              | Nome completo do cliente                        | VARCHAR(100) | NOT NULL                         |
+| Cpf               | Cadastro de Pessoa Física (CPF)                 | VARCHAR(11)  | NOT NULL                         |
+| Telefone          | Telefone de contato                             | VARCHAR(15)  | NOT NULL                         |
+| Email             | E-mail do cliente                               | VARCHAR(100) | NOT NULL                         |
+| Data_nascimento   | Data de nascimento                              | DATE         | NOT NULL                         |
 | Id_Historico  | Identificador único do registro de histórico de compras                 | INT        | FK,   NOT NULL                               |
 
 
@@ -104,15 +104,15 @@
 
 | Atributo         | Descrição                                           | Domínio       | Restrição do atributo            |
 | ---------------- | --------------------------------------------------- | ------------- | -------------------------------- |
-| id_funcionario | Identificador único do funcionário (chave primária) | INT           | PRIMARY KEY, INCREMENT, NOT NULL |
-| nome           | Nome completo do funcionário                        | VARCHAR(100)  | NOT NULL                         |
-| cpf            | Cadastro de Pessoa Física (CPF)                     | VARCHAR(11)   | NOT NULL                         |
-| endereco       | Endereço residencial do funcionário                 | VARCHAR(255)  | NOT NULL                         |
-| telefone       | Telefone de contato                                 | VARCHAR(15)   | NOT NULL                         |
-| email          | E-mail do funcionário                               | VARCHAR(100)  | NOT NULL                         |
+| Id_funcionario | Identificador único do funcionário (chave primária) | INT           | PRIMARY KEY, INCREMENT, NOT NULL |
+| Nome           | Nome completo do funcionário                        | VARCHAR(100)  | NOT NULL                         |
+| Cpf            | Cadastro de Pessoa Física (CPF)                     | VARCHAR(11)   | NOT NULL                         |
+| Endereco       | Endereço residencial do funcionário                 | VARCHAR(255)  | NOT NULL                         |
+| Telefone       | Telefone de contato                                 | VARCHAR(15)   | NOT NULL                         |
+| Email          | E-mail do funcionário                               | VARCHAR(100)  | NOT NULL                         |
 | Id_cargo          | Cargo que o funcionário ocupa                       | INT   | NOT NULL                         |
-| data_admissao  | Data de admissão na farmácia                        | DATE          | NOT NULL                         |
-| turno          | Turno de trabalho (ex: manhã, tarde, noite)         | VARCHAR(10)   | NOY NULL                         |
+| Data_admissao  | Data de admissão na farmácia                        | DATE          | NOT NULL                         |
+| Turno          | Turno de trabalho (ex: manhã, tarde, noite)         | VARCHAR(10)   | NOY NULL                         |
 
 
 ## Cargo
@@ -132,14 +132,14 @@
 
 | Atributo       | Descrição                                                                                   | Tipo de Dado | Restrição do Atributo            |
 | -------------- | ------------------------------------------------------------------------------------------- | ------------ | -------------------------------- |
-| id_prescricao  | Identificador único da prescrição médica                                                    | INT          | PRIMARY KEY, AUTOINCREMENT, NOT NULL |
-| id_tipo_receita    | Código único que identifica o tipo de receita vinculada à prescrição médica.                | INT          | NOT NULL, FK                     |
-| crm            | Código de Registro Médico (CRM) que identifica unicamente o médico que solicitou a receita. | CHAR(7)      | NOT NULL, FK                     |
-| paciente       | Nome completo do paciente ao qual a prescrição médica se destina.                           | VARCHAR(100) | NOT NULL                         |
-| prescricao     | Lista de medicamentos e suas respectivas doses prescritas pelo médico.                      | VARCHAR(500) | NOT NULL                         |
-| id_funcionario | Identificador único do funcionário responsável por registrar a prescrição no sistema.       | INT          | NOT NULL, FK                     |
-| descricao      | Descrição da situação do paciente                                                           | VARCHAR(500) | NOT NULL                         |
-| ID_Hospital   | identificador do hospital | INT    | FK, Autoincremenrt, NOT NULL, Unique |
+| Id_prescricao  | Identificador único da prescrição médica                                                    | INT          | PRIMARY KEY, AUTOINCREMENT, NOT NULL |
+| Id_tipo_receita    | Código único que identifica o tipo de receita vinculada à prescrição médica.                | INT          | NOT NULL, FK                     |
+| Crm            | Código de Registro Médico (CRM) que identifica unicamente o médico que solicitou a receita. | CHAR(7)      | NOT NULL, FK                     |
+| Paciente       | Nome completo do paciente ao qual a prescrição médica se destina.                           | VARCHAR(100) | NOT NULL                         |
+| Prescricao     | Lista de medicamentos e suas respectivas doses prescritas pelo médico.                      | VARCHAR(500) | NOT NULL                         |
+| Id_funcionario | Identificador único do funcionário responsável por registrar a prescrição no sistema.       | INT          | NOT NULL, FK                     |
+| Descricao      | Descrição da situação do paciente                                                           | VARCHAR(500) | NOT NULL                         |
+| Id_Hospital   | identificador do hospital | INT    | FK, Autoincremenrt, NOT NULL, Unique |
 
 
 
@@ -163,9 +163,9 @@
 
 | Atributo    | Descrição                                                                      | Domínio      | Restrição do Atributo |
 | ----------- | ------------------------------------------------------------------------------ | ------------ | --------------------- |
-| receita     | Tipo de receita emitida, como "controlada" ou "simples".                       | varchar(50)  | Not null              |
-| id_tipo_receita | Código único que identifica o tipo de receita, utilizado como chave primária.  | int          | not null, pk          |
-| descricao   | Recomendações e observações específicas associadas ao tipo de receita emitida. | varchar(500) | not null              |
+| Receita     | Tipo de receita emitida, como "controlada" ou "simples".                       | varchar(50)  | Not null              |
+| Id_tipo_receita | Código único que identifica o tipo de receita, utilizado como chave primária.  | int          | not null, pk          |
+| Descricao   | Recomendações e observações específicas associadas ao tipo de receita emitida. | varchar(500) | not null              |
 
 
 
@@ -173,28 +173,28 @@
 
 | Atributo        | Descrição                                                                | Domínio | Restrição do Atributo |
 | --------------- | ------------------------------------------------------------------------ | ------- | --------------------- |
-| id_servico     | Código único que identifica o serviço prestado.                          | int     | fk, not null          |
-| id_funcionario  | Identificador único do funcionário responsável pela prestação do serviço | int     | fk, not null          |
-| data_realizacao | Data exata em que o serviço foi realizado.                               | date    | not null              |
-| id_cliente      | Identificador único do cliente para quem o serviço foi prestado.         | int     | fk, not null          |
-| id_tipo_servico  | Identificador de tipo de receita |  int    | fk, not null |
+| Id_servico     | Código único que identifica o serviço prestado.                          | int     | fk, not null          |
+| Id_funcionario  | Identificador único do funcionário responsável pela prestação do serviço | int     | fk, not null          |
+| Data_realizacao | Data exata em que o serviço foi realizado.                               | date    | not null              |
+| Id_cliente      | Identificador único do cliente para quem o serviço foi prestado.         | int     | fk, not null          |
+| Id_tipo_servico  | Identificador de tipo de receita |  int    | fk, not null |
 
 
 ## Tipo de Serviço
 
 | Atributo    | Descrição                                                                                    | Domínio      | Restrição do Atributo |
 | ----------- | -------------------------------------------------------------------------------------------- | ------------ | --------------------- |
-| servico     | Nome do serviço oferecido, como "consulta médica" ou "exame laboratorial".                   | varchar(50)  | not null              |
-| id_tipo_servico | Código único de identificação do serviço, utilizado como chave primária.                     | int          | not null, pk          |
-| preco       | Valor monetário cobrado pela execução do serviço.                                            | float        | not null              |
-| descricao   | Detalhamento do serviço oferecido, incluindo o que está incluso e as condições de prestação. | varchar(500) | not null              |
+| Servico     | Nome do serviço oferecido, como "consulta médica" ou "exame laboratorial".                   | varchar(50)  | not null              |
+| Id_tipo_servico | Código único de identificação do serviço, utilizado como chave primária.                     | int          | not null, pk          |
+| Preco       | Valor monetário cobrado pela execução do serviço.                                            | float        | not null              |
+| Descricao   | Detalhamento do serviço oferecido, incluindo o que está incluso e as condições de prestação. | varchar(500) | not null              |
 
 
 ## hospital
 
 | Atributo      | Descrição                 | Dominio      | Restrição de atributo                |
 | ------------- | ------------------------- | ------------ | ------------------------------------ |
-| ID_Hospital   | identificador do hospital | INT    | PK, Autoincremenrt, NOT NULL, Unique |
+| Id_Hospital   | identificador do hospital | INT    | PK, Autoincremenrt, NOT NULL, Unique |
 | Nome_Hospital | nome do hospital          | Varchar(100) | NOT NULL                             |
 | Endereço      | endereço do hospital      | Varchar(200) | NOT NULL                             |
 
@@ -203,10 +203,10 @@
 
 | Atributo      | Descrição                                                          | Domínio      | Restrição do atributo               |
 | ------------- | ------------------------------------------------------------------ | ------------ | ----------------------------------- |
-| id_filial     | Identificador único da filial                                      | Int          | PK, AUTOINCREMENT, NOT NULL, UNIQUE |
+| Id_filial     | Identificador único da filial                                      | Int          | PK, AUTOINCREMENT, NOT NULL, UNIQUE |
 | Nome          | Nome da filial                                                     | Varchar(100) | NOT NULL                            |
 | Endereço      | Endereço completo do fornecedor (rua, número, cidade, estado, CEP) | varchar(255) | NOT NULL                            |
-| data_abertura | Dia de abertura                                    | date         | NOT NULL                         |
+| Data_abertura | Dia de abertura                                    | date         | NOT NULL                         |
 | Status        | Status da filial(ativo/não ativo)                                  | Boolean      | NOT NULL                            |
 | Horario_Funcionamento | horario de funcionamento                                    | time         | NOT NULL                         |
 
