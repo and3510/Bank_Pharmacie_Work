@@ -71,7 +71,7 @@
 | Desconto            | Valor ou porcentagem de desconto aplicado                                                 | Double       |  DEFAULT 0               |
 | Receita_Apresentada | Indica se a receita médica foi apresentada (Sim/Não) e Aplicável apenas para medicamentos | Boolean      |                         |
 | Id_Farmacêutico     | Identificador do farmacêutico responsável pela venda                                      | Int          | FK, NOT NULL            |
-| crm     | Identificador do medico                                      | Int          | FK            |
+| Crm     | Identificador do medico                                      | Int          | FK            |
 | Id_filial     | FIlial realizada a venda                                      | Int          | FK            |
 
 
