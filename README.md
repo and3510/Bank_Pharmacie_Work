@@ -26,8 +26,8 @@
 - [ ] Ferramentas
 - [ ] Modelo conceitual
   - [ ] Definição do Mini mundo
-  - [ ] Definição do Dicionário de Dados-DD
-  - [ ] Criação do Artefato – Modelo de Entidade Relacionamento-MER
+  - [x] Definição do Dicionário de Dados-DD
+  - [x] Criação do Artefato – Modelo de Entidade Relacionamento-MER
 - [ ] Modelo Lógico
   - [ ] Definir normatização do banco
   - [ ] Criação do Artefato – Diagrama de Entidade Relacional-DER
