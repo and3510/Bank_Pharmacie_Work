@@ -19,36 +19,26 @@
 
 <h2>Requisitos de Entrega </h2>
 
-<ul>
-    <li>Capa</li>
-    <li>Contracapa</li>
-    <li>Sumário</li>
-    <li>Introdução</li>
-    <li>Ferramentas</li>
-    <li>Modelo conceitual
-        <ul>
-            <li>Definição do Mini mundo</li>
-            <li>Definição do Dicionário de Dados-DD</li>
-            <li>Criação do Artefato – Modelo de Entidade Relacionamento-MER</li>
-        </ul>
-    </li>
-    <li>Modelo Lógico
-        <ul>
-            <li>Definir normatização do banco</li>
-            <li>Criação do Artefato – Diagrama de Entidade Relacional-DER</li>
-            <li>Criação das tabelas</li>
-        </ul>
-    </li>
-    <li>Modelo Físico
-        <ul>
-            <li>Povoamento (Inserção de registros)</li>
-            <li>Notação de Álgebra Relacional de Banco de dados</li>
-            <li>Consulta SQL</li>
-        </ul>
-    </li>
-    <li>Considerações finais</li>
-    <li>Referências bibliográficas</li>
-</ul>
+- [ ] Capa
+- [ ] Contracapa
+- [ ] Sumário
+- [ ] Introdução
+- [ ] Ferramentas
+- [ ] Modelo conceitual
+  - [ ] Definição do Mini mundo
+  - [ ] Definição do Dicionário de Dados-DD
+  - [ ] Criação do Artefato – Modelo de Entidade Relacionamento-MER
+- [ ] Modelo Lógico
+  - [ ] Definir normatização do banco
+  - [ ] Criação do Artefato – Diagrama de Entidade Relacional-DER
+  - [ ] Criação das tabelas
+- [ ] Modelo Físico
+  - [ ] Povoamento (Inserção de registros)
+  - [ ] Notação de Álgebra Relacional de Banco de dados
+  - [ ] Consulta SQL
+- [ ] Considerações finais
+- [ ] Referências bibliográficas
+
 
 
 <h2> Introdução </h2>
