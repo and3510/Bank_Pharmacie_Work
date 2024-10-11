@@ -86,17 +86,7 @@
 | Telefone          | Telefone de contato                             | VARCHAR(15)  | NOT NULL                         |
 | Email             | E-mail do cliente                               | VARCHAR(100) | NOT NULL                         |
 | Data_nascimento   | Data de nascimento                              | DATE         | NOT NULL                         |
-| Id_Historico  | Identificador único do registro de histórico de compras                 | INT        | FK,   NOT NULL                               |
 
-
-## Historio de compras do Cliente
-| Atributo        | Descrição                                                                 | Tipo de Dado   | Restrição do Atributo                          |
-| --------------- | ------------------------------------------------------------------------- | -------------- | --------------------------------------------- |
-| Id_Historico    | Identificador único do registro de histórico de compras                   | INT            | PRIMARY KEY, AUTOINCREMENT, NOT NULL           |
-| Data_Compra     | Data e hora em que a compra foi realizada                                | DATETIME       | NOT NULL                                      |
-| Valor_Total     | Valor total da compra realizada                                           | DECIMAL(10, 2) | NOT NULL                                      |
-| Forma_Pagamento | Método de pagamento utilizado na compra (Ex.: cartão, dinheiro)          | VARCHAR(50)    | NOT NULL                                      |
-| Desconto        | Valor ou porcentagem de desconto aplicado na compra, se houver           | DECIMAL(10, 2) |                                               |
 
 
 
@@ -149,8 +139,9 @@
 
 | Atributo         | Descrição                                                                                  | Tipo de Dado   | Restrição do Atributo                                  |
 | ---------------- | ------------------------------------------------------------------------------------------ | -------------- | ----------------------------------------------------- |
+| Id_Medicamento_Prescrito   | Identificador único do medicamento prescrito                                                | INT            | PRIMARY KEY, NOT NULL, AUTOINCREMENT     |
 | Id_Prescricao    | Identificador único da prescrição médica                                                    | INT            | FOREIGN KEY (Prescrição_Medica), NOT NULL |
-| Id_Medicamento   | Identificador único do medicamento prescrito                                                | INT            | FOREIGN KEY (Medicamentos), NOT NULL      |
+| Id_Medicamento   | Identificador único do medicamento                                               | INT            | FOREIGN KEY (Medicamentos), NOT NULL      |
 | Dosagem          | Quantidade ou frequência do medicamento prescrito                                           | VARCHAR(50)    | NOT NULL                                              |
 | Quantidade       | Quantidade total do medicamento prescrito                                                   | INT            | NOT NULL                                              |
 | Instruções_Uso   | Instruções adicionais sobre o uso do medicamento, se aplicável                              | VARCHAR(255)   |                                                      |
@@ -173,7 +164,7 @@
 
 | Atributo        | Descrição                                                                | Domínio | Restrição do Atributo |
 | --------------- | ------------------------------------------------------------------------ | ------- | --------------------- |
-| Id_servico     | Código único que identifica o serviço prestado.                          | int     | fk, not null          |
+| Id_servico     | Código único que identifica o serviço prestado.                          | int     | pk, not null          |
 | Id_funcionario  | Identificador único do funcionário responsável pela prestação do serviço | int     | fk, not null          |
 | Data_realizacao | Data exata em que o serviço foi realizado.                               | date    | not null              |
 | Id_cliente      | Identificador único do cliente para quem o serviço foi prestado.         | int     | fk, not null          |
