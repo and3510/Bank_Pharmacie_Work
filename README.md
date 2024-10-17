@@ -29,8 +29,8 @@
   - [x] Definição do Dicionário de Dados-DD
   - [x] Criação do Artefato – Modelo de Entidade Relacionamento-MER
 - [ ] Modelo Lógico
-  - [ ] Definir normatização do banco
-  - [ ] Criação do Artefato – Diagrama de Entidade Relacional-DER
+  - [x] Definir normatização do banco
+  - [x] Criação do Artefato – Diagrama de Entidade Relacional-DER
   - [ ] Criação das tabelas
 - [ ] Modelo Físico
   - [ ] Povoamento (Inserção de registros)
