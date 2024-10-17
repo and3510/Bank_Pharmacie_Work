@@ -20,8 +20,8 @@
 <h2>Requisitos de Entrega </h2>
 
 - [ ] Capa
-- [ ] Contracapa
-- [ ] Sumário
+- [x] Contracapa
+- [x] Sumário
 - [ ] Introdução
 - [ ] Ferramentas
 - [ ] Modelo conceitual
