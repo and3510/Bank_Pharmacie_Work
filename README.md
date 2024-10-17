@@ -49,46 +49,66 @@ Trabalho da Faculdade de Banco de Dados para uma Farmácia
 
 Nesta seção, precisamos criar entidades para o sistema da farmácia.
 
-**Medicamentos**:
+Medicamento
 
-Armazena informações detalhadas sobre os medicamentos, essenciais para controle de estoque, vendas, validade e requisitos de receita médica.
+    Representa os medicamentos disponíveis para venda, incluindo informações como nome, descrição, preço, validade, etc.
 
-**Fornecedores**:
+Categoria do Medicamento
 
-Garante o registro de fornecedores responsáveis pelo abastecimento de medicamentos e outros produtos, facilitando a gestão de contratos e informações de contato.
+    Classifica os medicamentos em categorias (por exemplo, analgésicos, antibióticos), permitindo organização e pesquisa mais fácil.
 
-**Vendas**:
+Fabricante do Medicamento
 
-Controla as transações de vendas realizadas, permitindo rastreamento de produtos vendidos, clientes, farmacêuticos responsáveis, descontos aplicados e se houve a apresentação de receita médica.
+    Armazena informações sobre os fabricantes dos medicamentos, incluindo nome, endereço, e dados de contato.
 
-**Clientes**:
+Fornecedor
 
-Mantém um cadastro de clientes, necessário para o controle de compras, contatos e histórico de vendas, além de facilitar o relacionamento com o cliente.
+    Representa os fornecedores que fornecem os medicamentos à farmácia, contendo detalhes de contato e status.
 
-**Funcionários**:
+Venda
 
-Registra os dados dos funcionários, importante para a administração de pessoal, controle de funções, turnos de trabalho e pagamentos.
+    Registra as vendas realizadas, incluindo data, valor total e informações do cliente e do funcionário responsável pela venda.
 
-**Prescrição Médica**:
+Vendas_Medicamento
 
-Armazena as prescrições médicas, essenciais para a venda de medicamentos controlados e acompanhamento de tratamentos médicos.
+    Associa os medicamentos vendidos a uma venda específica, permitindo rastreamento de cada item vendido e seu valor.
 
-**Tipo de Receita**:
+Vendas_Serviço
 
-Define os tipos de receitas médicas, importante para classificar medicamentos controlados ou simples e aplicar corretamente as restrições de venda.
+    Similar à tabela de vendas de medicamentos, mas para serviços prestados, permitindo o registro de cada serviço vendido em uma venda.
 
-**Serviços**:
+Serviço
 
-Controla os serviços prestados pela farmácia, como consultas ou exames, assegurando o rastreamento das atividades realizadas por funcionários.
+    Contém informações sobre os serviços oferecidos pela farmácia, como consultas ou exames.
 
-**Tipo de Serviço**:
+Tipo de Serviço
 
-Classifica os diferentes serviços prestados, garantindo a definição clara de preços e detalhes dos serviços ofertados.
+    Classifica os serviços prestados, com informações sobre o preço e descrição.
 
-**Hospitais**:
+Cliente
 
-Registra hospitais associados, facilitando parcerias, vendas de medicamentos para hospitais e acompanhamento de convênios.
+    Registra informações sobre os clientes da farmácia, incluindo dados pessoais e de contato.
 
-**Filiais**:
+Funcionário
 
-Controla as filiais da farmácia, incluindo informações de localização, status de operação e datas de abertura, facilitando a gestão descentralizada.
+    Armazena informações sobre os funcionários da farmácia, como nome, CPF, e cargo.
+
+Cargo
+
+    Define os cargos ocupados pelos funcionários, com detalhes sobre responsabilidades e salário.
+
+Prescrição Médica
+
+    Armazena informações sobre prescrições médicas, incluindo dados do paciente, médico e medicamentos prescritos.
+
+Tipo de Receita
+
+    Classifica os tipos de receitas médicas, como controladas e simples, com observações específicas.
+
+Medicamentos_Prescritos
+
+    Associa medicamentos a uma prescrição médica específica, incluindo dosagem e instruções de uso.
+
+Filial
+
+    Representa as diferentes filiais da farmácia, contendo informações sobre cada unidade, como nome, endereço e horário de funcionamento.
