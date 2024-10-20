@@ -2,8 +2,6 @@
 
 ## Medicamento
 
-<h4 style="text-align: center; border: 1px solid #A9A9A9; padding: 10px; margin: 0px;">Entidade Medicamento</h4>
-
 | Atributo           | Descrição                                                          | Tipo de Dado   | Restrição do Atributo                  |
 | ------------------ | ------------------------------------------------------------------ | -------------- | -------------------------------------- |
 | IdMedicamento     | Identificador único do medicamento                                 | MEDIUMINT(10)            | PRIMARY KEY, AUTO INCREMENT, NOT NULL, UNIQUE   |
