@@ -1,6 +1,10 @@
 ### Mini Mundo: Farmácia de Medicamentos e Serviços
 
-Neste mini mundo, uma farmácia oferece produtos e serviços para seus clientes, como medicamentos e serviços. A farmácia é composta por várias filiais, com funcionários que trabalham em diferentes cargos e turnos. A venda de produtos e serviços é gerida através de um sistema que controla os dados de clientes, medicamentos, fabricantes, fornecedores e prescrições médicas.
+A farmácia "Saúde para Todos" oferece uma ampla gama de produtos e serviços para seus clientes, como medicamentos e serviços de saúde, incluindo aplicação de vacinas e consultas médicas. Com várias filiais localizadas em diversas cidades, a farmácia conta com uma equipe de funcionários que trabalham em diferentes cargos e turnos, assegurando o atendimento eficiente em cada unidade.
+
+O abastecimento de medicamentos é garantido por uma rede confiável de fornecedores e fabricantes, que mantém o estoque sempre atualizado. Além disso, o sistema da farmácia centraliza todas as operações, incluindo o controle de vendas de produtos e serviços, a gestão de estoque, a administração de funcionários e o acompanhamento de prescrições médicas, especialmente no que diz respeito à venda de medicamentos controlados.
+
+Essa estrutura integrada facilita a comunicação e a eficiência entre filiais, fornecedores e clientes, garantindo segurança e agilidade nas transações. O sistema também permite o registro e monitoramento de todas as informações essenciais para o bom funcionamento da farmácia, refletindo os processos diários e promovendo a gestão eficiente das operações em todas as unidades.
 
 #### Entidades Principais:
 
