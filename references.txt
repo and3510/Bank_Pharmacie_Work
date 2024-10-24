@@ -6,6 +6,7 @@ https://www.marilia.unesp.br/Home/Instituicao/Docentes/EdbertoFerneda/bd-aulas03
 
 https://sites.ffclrp.usp.br/cid/docentes/edberto/Apostilas/Apostila%20SQL.pdf
 
+https://www.amazon.com.br/Introdu%C3%A7%C3%A3o-Linguagem-SQL-Abordagem-Iniciantes/dp/8575225014
 
 https://www.youtube.com/watch?v=GdxodSoV_5k&t=19s
 
@@ -13,3 +14,4 @@ https://www.youtube.com/watch?v=IvrSP_VHP-c&t=259s
 
 https://www.devmedia.com.br/mer-e-der-modelagem-de-bancos-de-dados/14332
 
+https://adrianoribeiro.orgfree.com/downloads/SQL.pdf
