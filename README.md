@@ -19,24 +19,24 @@
 
 <h2>Requisitos de Entrega </h2>
 
-- [ ] Capa
+- [x] Capa
 - [x] Contracapa
 - [x] Sumário
-- [ ] Introdução
+- [x] Introdução
 - [x] Ferramentas
 - [x] Modelo conceitual
   - [x] Definição do Mini mundo
   - [x] Definição do Dicionário de Dados-DD
   - [x] Criação do Artefato – Modelo de Entidade Relacionamento-MER
-- [ ] Modelo Lógico
-  - [ ] Definir normatização do banco
+- [x] Modelo Lógico
+  - [x] Definir normatização do banco
   - [x] Criação do Artefato – Diagrama de Entidade Relacional-DER
-  - [ ] Criação das tabelas
+  - [x] Criação das tabelas
 - [ ] Modelo Físico
   - [ ] Povoamento (Inserção de registros)
   - [ ] Notação de Álgebra Relacional de Banco de dados
   - [ ] Consulta SQL
-- [ ] Considerações finais
+- [x] Considerações finais
 - [ ] Referências bibliográficas
 
 
