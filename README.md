@@ -33,7 +33,7 @@
   - [x] Criação do Artefato – Diagrama de Entidade Relacional-DER
   - [x] Criação das tabelas
 - [ ] Modelo Físico
-  - [ ] Povoamento (Inserção de registros)
+  - [x] Povoamento (Inserção de registros)
   - [ ] Notação de Álgebra Relacional de Banco de dados
   - [ ] Consulta SQL
 - [x] Considerações finais
