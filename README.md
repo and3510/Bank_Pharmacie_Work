@@ -79,7 +79,7 @@ Trabalho da Faculdade de Banco de Dados para uma Farmácia
 
     <div align="center" >
 
-    <img src="completed/fase1°/mer.png" alt="Descrição da Imagem" width="600">
+    <img src="completed/mer.png" alt="Descrição da Imagem" width="600">
     <p> Modelo de Entidade Relacionamento-MER </p>
     </div>
 
@@ -88,7 +88,7 @@ Trabalho da Faculdade de Banco de Dados para uma Farmácia
 
     <div align="center" >
 
-    <img src="completed/fase2°/DER.png" alt="Descrição da Imagem" width="600">
+    <img src="completed/DER.png" alt="Descrição da Imagem" width="600">
     <p> Diagrama de Entidade Relacional-DER </p>
     </div>
 
