@@ -193,3 +193,9 @@ Trabalho da Faculdade de Banco de Dados para uma Farmácia
     </div>
 
 ## Conclusão
+
+Este trabalho permitiu a aplicação prática de conceitos fundamentais de bancos de dados, como a modelagem conceitual e a normalização. O banco de dados desenvolvido para uma farmácia mostrou a importância de um planejamento eficiente na organização de dados, facilitando a gestão de estoque, vendas e serviços.
+
+O uso de técnicas de normalização, juntamente com a implementação de consultas SQL, destacou a relevância de se eliminar redundâncias e garantir a consistência dos dados. No contexto acadêmico, esse projeto reforça o aprendizado prático necessário para o desenvolvimento de sistemas eficientes e seguros.
+
+Para trabalhos futuros, a expansão do sistema com mais funcionalidades, como relatórios detalhados e integração com sistemas externos, pode aumentar ainda mais a eficiência do banco de dados.
