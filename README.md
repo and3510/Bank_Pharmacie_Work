@@ -17,7 +17,7 @@
 - Gustavo do Vale - [gustavodovale](https://github.com/gustavodovale)
 
 
-<h2>Requisitos de Entrega </h2>
+<h2>Requisitos de Entrega do Documento </h2>
 
 - [x] Capa
 - [x] Contracapa
