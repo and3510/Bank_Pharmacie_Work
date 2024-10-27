@@ -32,12 +32,12 @@
   - [x] Definir normatização do banco
   - [x] Criação do Artefato – Diagrama de Entidade Relacional-DER
   - [x] Criação das tabelas
-- [ ] Modelo Físico
+- [x] Modelo Físico
   - [x] Povoamento (Inserção de registros)
-  - [ ] Notação de Álgebra Relacional de Banco de dados
-  - [ ] Consulta SQL
+  - [x] Notação de Álgebra Relacional de Banco de dados
+  - [x] Consulta SQL
 - [x] Considerações finais
-- [ ] Referências bibliográficas
+- [x] Referências bibliográficas
 
 
 
