@@ -1,7 +1,8 @@
 <h1 align="center">Banco de Dados de uma Farmácia</h1>
 
 <div align="center" >
-
+  
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=GREEN&style=for-the-badge)
 ![dbeaver](https://img.shields.io/badge/dbeaver-382923?style=for-the-badge&logo=dbeaver&logoColor=whit)
 ![Mysql](https://img.shields.io/badge/MySQL-018bff?style=for-the-badge&logo=mysql&logoColor=white)
 ![Overleaf](https://img.shields.io/badge/Overleaf-47A141?style=for-the-badge&logo=Overleaf&logoColor=white)
