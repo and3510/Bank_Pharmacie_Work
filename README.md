@@ -10,8 +10,6 @@
 
 </div>
 
-teste
-
 ## Sumário
 
 * [Integrantes](#integrantes)
